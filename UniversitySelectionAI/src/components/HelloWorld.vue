@@ -37,8 +37,8 @@
 
     <button v-on:click="s();" id="button1">Submit</button>
 
-      <div class="result" v-if="buttonPressed">
-        <!--<p>Testing</p> -->
+      <!--<div class="result" v-if="buttonPressed">
+        <p>Testing</p>
           <table class="smallTable">
             <tr>
               <td colspan="2">Rank</td>
@@ -95,7 +95,7 @@
               <td>{{ this.$root.college.tuition[p[4]] }}</td>
             </tr>
           </table>
-        </div>
+        </div>-->
 
   </span>
 
@@ -203,21 +203,18 @@ h1{
 }
 
 button {
+  background-color: ##4d746d;
+  border: 2px solid #69fbff;
+  color: #303e47;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   cursor: pointer;
-  width: 75px;
-  height: 30px;
+  width: 150px;
+  height: 50px;
   margin-top: 10px;
 }
 
-table {
-  position: center;
-}
-
-td {
-  min-width: 10%;
-  margin: 5px;
-  padding: 10px;
-}
 
 ul {
   list-style-type: none;

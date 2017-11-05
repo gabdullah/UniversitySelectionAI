@@ -1,9 +1,10 @@
 <template>
   <div id="container">
     <reqHeader></reqHeader>
+
     <span>
+      <h5> Show me</h5>
     <div class="result">
-      <!--<p>Testing</p> -->
         <table class="smallTable">
           <tr>
             <td colspan="2">Rank</td>
@@ -71,17 +72,13 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      //msg: 'Welcome to Your Vue.js App',
-      buttonPressed: false,
-      p: [],
-      best: ''
     }
   },
   components:{
     reqHeader
   },
 }
-  </script>
+</script>
 
 <style>
 #container{
@@ -97,7 +94,19 @@ export default {
   flex-flow: column;
   background: #303e47;
 }
-.result{
-  position: absolute;
+
+td {
+  min-width: 10%;
+  margin: 5px;
+  padding: 10px;
 }
+
+table {
+  width: 75%;
+  position: center;
+  position: absolute;
+  color: #bad8a3;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
 </style>
