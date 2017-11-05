@@ -166,7 +166,8 @@ export default {
 
 .result {
   width: 70%;
-  position: center;
+  margin-left: 50%;
+  margin: auto;
 }
 
 .boxes {
